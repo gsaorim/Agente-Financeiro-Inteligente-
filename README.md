@@ -37,22 +37,27 @@ flowchart TD
 ## 📁 Estrutura do Projeto
 
 ```
+├── .streamlit/                    # Configurações locais de segurança (NÃO ENVIAR AO GITHUB)
+│   └── secrets.toml               # Armazenamento seguro da GROQ_API_KEY
+│
 ├── data/                          # Base de conhecimento
 │   ├── perfil_investidor.json     # Perfil do cliente
 │   ├── transacoes.csv             # Histórico de gastos recentes
 │   ├── historico_atendimento.csv  # Interações e progresso anterior
 │   ├── produtos_financeiros.json  # Lista de produtos para ensino
-│   └── dicionario_analogias.json  # Regras de analogias do Nico
+│   └── dicionario_analogias.json  # Regras de analogias do Nico[cite: 2]
 │
-├── docs/                          # Documentação completa
-│   ├── 01-documentacao-agente.md  # Caso de uso e persona do Nico
-│   ├── 02-base-conhecimento.md    # Estratégia e modelagem de dados
-│   ├── 03-prompts.md              # System prompt e tratamento de exceções
-│   ├── 04-metricas.md             # Plano de avaliação e testes locais
-│   └── 05-pitch.md                # Apresentação de negócios do projeto
+├── docs/                          # Documentação completa[cite: 2]
+│   ├── 01-documentacao-agente.md  # Caso de uso e persona do Nico[cite: 2]
+│   ├── 02-base-conhecimento.md    # Estratégia e modelagem de dados[cite: 2]
+│   ├── 03-prompts.md              # System prompt e tratamento de exceções[cite: 2]
+│   ├── 04-metricas.md             # Plano de avaliação e resultados dos testes
+│   └── 05-pitch.md                # Apresentação de negócios do projeto[cite: 2]
 │
-└── src/
-    └── app.py                     # Aplicação Streamlit
+├── src/
+│   └── app.py                     # Aplicação Streamlit com sanitização de layout e segurança
+│
+└── .gitignore                     # Filtro do Git para impedir o vazamento de chaves privadas
 ```
 
 ## 🚀 Como Executar
