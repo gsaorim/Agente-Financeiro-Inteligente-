@@ -1,0 +1,34 @@
+[
+  {
+    "nome": "Tesouro Selic",
+    "categoria": "renda_fixa",
+    "risco": "muito baixo",
+    "rentabilidade": "100% da Selic",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Reserva de emergência e iniciantes absolutos"
+  },
+  {
+    "nome": "CDB Liquidez Diária",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "102% do CDI",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Quem busca segurança com o dinheiro rendendo livre todo dia"
+  },
+  {
+    "nome": "LCI/LCA",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "95% do CDI",
+    "aporte_minimo": 1000.00,
+    "indicado_para": "Quem pode deixar o dinheiro parado por pelo menos 90 dias (isento de Imposto de Renda)"
+  },
+  {
+    "nome": "Fundo Imobiliário (FII)",
+    "categoria": "fundo",
+    "risco": "medio",
+    "rentabilidade": "Dividendos mensais (entre 0,5% a 1% ao mês)",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Aprender como funciona a renda variável através de aluguéis, sem correr riscos extremos"
+  }
+]
